@@ -1,5 +1,7 @@
 # Diabetes risk prediction
 
+A simple, visual, and interactive web app that explores how everyday health factors influence diabetes risk — powered by machine learning.
+
 ## Problem statement
 Diabetes is a condition that happens when your blood sugar (glucose) is too high. It develops when your pancreas doesn’t make enough insulin or any at all, or when your body isn’t responding to the effects of insulin properly.
 
@@ -9,8 +11,11 @@ Diabetes affects people of all ages.
 
 This project focuses on building a highly sensitive classification model to predict the onset of diabetes based on diagnostic measurements from the Pima Indians Diabetes Dataset. Given the medical nature of the problem, the primary goal was to maximize Recall (Sensitivity) to minimize the risk of a false-negative diagnosis.
 
-## 📂 Data
-The dataset used is the publicly available Pima Indians Diabetes Dataset, containing 768 rows and 9 columns of diagnostic information, including the target variable Outcome (0 or 1).
+## 🧬 Dataset
+* Source: Pima Indians Diabetes Database (Kaggle)
+* Samples: 768
+* Features: 8 independent variables (Glucose, BMI, Age, Insulin, etc.)
+* Target: Outcome — 1 indicates diabetes, 0 indicates no diabetes
 
 ## 💻 Dependencies
 This project requires Python 3.x and the following libraries:
@@ -20,7 +25,7 @@ This project requires Python 3.x and the following libraries:
 * seaborn
 * scikit-learn
 
-## Process
+## 🧠 Process
 
 ### 1. Data Loading and Initial Cleaning 
 Load Data: The project begins by loading the raw Pima Indians Diabetes dataset into a Pandas DataFrame.
@@ -62,7 +67,7 @@ Multiple models are trained on the prepared X train
 
 * Final Selection: The Logistic Regression model, which achieved the highest Recall (nearly 80%), is selected as the optimal predictor because it provides the best diagnostic sensitivity (lowest rate of missed diagnoses). The process concludes with a presentation of the results in a clear format (a Pandas DataFrame) and a concluding summary.
 
-##  Key Results
+##  📊 Key Results
 The model evaluation focused on Recall to ensure high diagnostic sensitivity.
 
 <img width="453" height="170" alt="image" src="https://github.com/user-attachments/assets/d7436d22-73a9-4a34-a108-32fd0cf18be1" />
